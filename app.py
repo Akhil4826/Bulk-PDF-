@@ -42,28 +42,12 @@ def allowed_file(filename, allowed_extensions):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in allowed_extensions
 
 def word_to_pdf(word_path, output_path):
+    """Convert Word document to PDF"""
     try:
-        # Command to convert DOCX to PDF using LibreOffice in headless mode
-        command = [
-            'libreoffice',
-            '--headless',  # Run in headless mode (no GUI)
-            '--convert-to', 'pdf',  # Convert to PDF
-            '--outdir', os.path.dirname(output_path),  # Output directory
-            word_path  # Input DOCX file path
-        ]
-        
-        # Run the conversion command
-        subprocess.run(command, check=True)
-        
-        # Ensure the file is created successfully
-        if os.path.exists(output_path):
-            return True
-        else:
-            print(f"Error: Conversion failed for {word_path}")
-            return False
-            
-    except subprocess.CalledProcessError as e:
-        print(f"Error: {str(e)}")
+        convert(word_path, output_path)
+        return True
+    except Exception as e:
+        print(f"Error converting Word to PDF: {str(e)}")
         return False
 
 def process_pdf(target_pdf, overlay_pdf, output_path, position='append'):
