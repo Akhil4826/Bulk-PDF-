@@ -43,9 +43,9 @@ def allowed_file(filename, allowed_extensions):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in allowed_extensions
 
 def word_to_pdf(word_path, output_path):
+    """Convert Word document to PDF"""
     try:
-        output = pypandoc.convert_file(word_path, 'pdf', outputfile=output_path)
-        assert output == ""
+        convert(word_path, output_path)
         return True
     except Exception as e:
         print(f"Error converting Word to PDF: {str(e)}")
