@@ -19,7 +19,8 @@ A platform-independent web application that allows you to add content from Word 
 
 ## Screenshots
 
-![PDF Updater Interface](screenshots/interface.png)
+![PDF Updater Interface](https://github.com/user-attachments/assets/38ee0eeb-768b-4fb2-b290-4a220956452e)
+)
 
 ## Installation
 
