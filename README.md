@@ -36,7 +36,7 @@ A platform-independent web application that allows you to add content from Word 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pdf-updater.git
+git clone https://github.com/Akhil4826/PDF-akhil.git
 cd pdf-updater
 ```
 
