@@ -1,21 +1,27 @@
-# PDF Updater
+# 📄 PDF Updater
 
 ![PDF Updater](https://img.shields.io/badge/PDF-Updater-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue)
 ![Flask](https://img.shields.io/badge/flask-2.0%2B-red)
 
-A platform-independent web application that allows you to add content from Word documents to PDF files. The application preserves all formatting, images, and layout in the resulting PDFs.
+**PDF Updater** is a platform-independent web application that allows you to **insert content from Word documents into existing PDF files**, with full **formatting, image, and layout preservation**.
 
-## Features
+> 🌐 **Live Demo**: [pdf-akhil.onrender.com](https://pdf-akhil.onrender.com/)
 
-- **Cross-Platform Support**: Works on Windows, macOS, and Linux
-- **Multiple Positioning Options**: Add Word content to the beginning or end of PDFs, or replace PDF content entirely
-- **Batch Processing**: Process multiple PDF files at once
-- **Format Preservation**: Maintains all images, text formatting, and layout
-- **Progress Tracking**: Real-time progress updates for processing tasks
-- **Detailed Reports**: Get information about successful and failed conversions
-- **Secure File Handling**: Uses temporary directories and secure file operations
+---
+
+## 🚀 Features
+
+- ✅ **Cross-Platform**: Works on Windows, macOS, and Linux
+- 📌 **Position Control**: Add content to the **beginning**, **end**, or **replace** PDF pages
+- 📂 **Batch Processing**: Upload and process **multiple PDFs** at once
+- 🖼️ **Preserve Formatting**: Maintains original **text styles**, **images**, and **layouts**
+- 📊 **Progress Tracking**: See live progress during file processing
+- 📃 **Detailed Reports**: Summary of successful and failed conversions
+- 🔐 **Secure Handling**: Uses **temporary storage** and removes files after use
+
+---
 
 ## Screenshots
 
