@@ -4,7 +4,6 @@ import tempfile
 import uuid
 import shutil
 import fitz  # PyMuPDF
-import pythoncom  # For COM initialization
 import platform
 import threading
 import time
@@ -33,23 +32,6 @@ active_jobs = {}
 
 def allowed_file(filename, allowed_extensions):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in allowed_extensions
-
-def word_to_pdf_windows(word_path, output_path):
-    """Convert Word document to PDF using COM on Windows"""
-    try:
-        import win32com.client
-        pythoncom.CoInitialize()
-        word = win32com.client.Dispatch('Word.Application')
-        doc = word.Documents.Open(word_path)
-        doc.SaveAs(output_path, FileFormat=17)  # 17 is PDF format
-        doc.Close()
-        word.Quit()
-        return True
-    except Exception as e:
-        print(f"Error converting Word to PDF using Windows method: {str(e)}")
-        return False
-    finally:
-        pythoncom.CoUninitialize()
 
 def word_to_pdf_libreoffice(word_path, output_path):
     """Convert Word document to PDF using LibreOffice"""
@@ -103,11 +85,7 @@ def word_to_pdf_libreoffice(word_path, output_path):
 def word_to_pdf(word_path, output_path):
     """Cross-platform Word to PDF conversion"""
     # First try using platform-specific methods
-    if platform.system() == 'Windows':
-        # Try Windows-specific method first
-        if word_to_pdf_windows(word_path, output_path):
-            return True
-    
+  
     # Fall back to LibreOffice (works on all platforms if installed)
     if word_to_pdf_libreoffice(word_path, output_path):
         return True
