@@ -18,7 +18,6 @@ import subprocess
 import os
 import platform
 import pypandoc
-
 app = Flask(__name__)
 
 # Configuration
