@@ -233,7 +233,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [Akhil] - akhilteotia19@gmail.com
 
-Project Link: [https://github.com/yourusername/pdf-updater](https://github.com/akhil4826/pdf-updater)
+Project Link: [https://github.com/akhil4826/pdf-updater](https://github.com/akhil4826/pdf-updater)
 
 ## Acknowledgements
 
