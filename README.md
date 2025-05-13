@@ -231,9 +231,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername) - email@example.com
+Your Name - [Akhil] - akhilteotia19@gmail.com
 
-Project Link: [https://github.com/yourusername/pdf-updater](https://github.com/yourusername/pdf-updater)
+Project Link: [https://github.com/yourusername/pdf-updater](https://github.com/akhil4826/pdf-updater)
 
 ## Acknowledgements
 
