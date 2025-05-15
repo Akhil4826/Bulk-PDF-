@@ -7,7 +7,7 @@
 
 **PDF Updater** is a platform-independent web application that allows you to **insert content from Word documents into existing PDF files**, with full **formatting, image, and layout preservation**.
 
-> 🌐 **Live Demo**: [/akhil.up.railway.app](https://akhil.up.railway.app//)
+> 🌐 **Live Demo**: [akhil.up.railway.app](https://akhil.up.railway.app//)
 
 ---
 
