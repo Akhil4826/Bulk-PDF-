@@ -231,7 +231,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Name - Akhil
+Name - Akhil.
+
 email id - akhilteotia19@gmail.com
 
 Project Link: [https://github.com/akhil4826/pdf-updater](https://github.com/akhil4826/pdf-updater)
