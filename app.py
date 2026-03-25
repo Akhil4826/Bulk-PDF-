@@ -1,5 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_file
-import os
+from flask import Flask, render_template, request, jsonify, send_file, send_from_directoryimport os
 import tempfile
 import uuid
 import shutil
@@ -30,6 +29,10 @@ app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 # Store processing jobs
 active_jobs = {}
 
+@app.route('/googlea0347b958f9535c0.html')
+def verify():
+    return send_from_directory('static', 'googlea0347b958f9535c0.html')
+    
 def allowed_file(filename, allowed_extensions):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in allowed_extensions
 
